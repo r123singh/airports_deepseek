@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bad9d323fcd7b14999d42132e3302e55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bad9d323fcd7b14999d42132e3302e55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bad9d323fcd7b14999d42132e3302e55 = L.map(
+                "map_bad9d323fcd7b14999d42132e3302e55",
+                {
+                    center: [33.6407, -84.4277],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_876a0b0cd99b44a98bbccbd44a6cd249 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_876a0b0cd99b44a98bbccbd44a6cd249.addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var marker_30c222486662584dba7d8f48dc682917 = L.marker(
+                [33.6407, -84.4277],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_af49684a980212eb1e21915015c084f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_30c222486662584dba7d8f48dc682917.setIcon(icon_af49684a980212eb1e21915015c084f9);
+        
+    
+        var popup_6059b8da1539c7a8d678b1bfd6694ae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea885d4dfdd5156165a6075c9da6b616 = $(`<div id="html_ea885d4dfdd5156165a6075c9da6b616" style="width: 100.0%; height: 100.0%;">City: Atlanta<br>Airport: Hartsfield-Jackson Airport<br>Daily Routes: 2700<br>Airlines: 50</div>`)[0];
+                popup_6059b8da1539c7a8d678b1bfd6694ae9.setContent(html_ea885d4dfdd5156165a6075c9da6b616);
+            
+        
+
+        marker_30c222486662584dba7d8f48dc682917.bindPopup(popup_6059b8da1539c7a8d678b1bfd6694ae9)
+        ;
+
+        
+    
+    
+            var marker_f9f5ab2a5f8642ac759698bf5b418dc9 = L.marker(
+                [40.0801, 116.5845],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_953277e43f3cc5579a6bf999d8e9d11b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f9f5ab2a5f8642ac759698bf5b418dc9.setIcon(icon_953277e43f3cc5579a6bf999d8e9d11b);
+        
+    
+        var popup_9fc3fb56a80a5538439ccfed98f77353 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d25a41648e69372f5695a13e5ec864ff = $(`<div id="html_d25a41648e69372f5695a13e5ec864ff" style="width: 100.0%; height: 100.0%;">City: Beijing<br>Airport: Beijing Capital International<br>Daily Routes: 1700<br>Airlines: 100</div>`)[0];
+                popup_9fc3fb56a80a5538439ccfed98f77353.setContent(html_d25a41648e69372f5695a13e5ec864ff);
+            
+        
+
+        marker_f9f5ab2a5f8642ac759698bf5b418dc9.bindPopup(popup_9fc3fb56a80a5538439ccfed98f77353)
+        ;
+
+        
+    
+    
+            var marker_82b9a418d169df9e0dac778b2b65b8e1 = L.marker(
+                [33.9416, -118.4085],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_701514058211da2c6347fcf6836ff6bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_82b9a418d169df9e0dac778b2b65b8e1.setIcon(icon_701514058211da2c6347fcf6836ff6bf);
+        
+    
+        var popup_b8f083fa46aed1808b66fff8a60cfa00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_620161b7d16a7af1e4140ba283b15aad = $(`<div id="html_620161b7d16a7af1e4140ba283b15aad" style="width: 100.0%; height: 100.0%;">City: Los Angeles<br>Airport: Los Angeles International<br>Daily Routes: 1500<br>Airlines: 70</div>`)[0];
+                popup_b8f083fa46aed1808b66fff8a60cfa00.setContent(html_620161b7d16a7af1e4140ba283b15aad);
+            
+        
+
+        marker_82b9a418d169df9e0dac778b2b65b8e1.bindPopup(popup_b8f083fa46aed1808b66fff8a60cfa00)
+        ;
+
+        
+    
+    
+            var marker_bf9d6059fb88bd40674cfd923df514fe = L.marker(
+                [35.5494, 139.7798],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_1e99b04d7d58784e7a2991406f2a0aac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bf9d6059fb88bd40674cfd923df514fe.setIcon(icon_1e99b04d7d58784e7a2991406f2a0aac);
+        
+    
+        var popup_a5aab4fb1f78c9f30f62509466c76e40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40aaa5d973de470bd1b517fb6b4172f5 = $(`<div id="html_40aaa5d973de470bd1b517fb6b4172f5" style="width: 100.0%; height: 100.0%;">City: Tokyo<br>Airport: Haneda Airport<br>Daily Routes: 1400<br>Airlines: 60</div>`)[0];
+                popup_a5aab4fb1f78c9f30f62509466c76e40.setContent(html_40aaa5d973de470bd1b517fb6b4172f5);
+            
+        
+
+        marker_bf9d6059fb88bd40674cfd923df514fe.bindPopup(popup_a5aab4fb1f78c9f30f62509466c76e40)
+        ;
+
+        
+    
+    
+            var marker_8ece0433ea313441b1b92c5291840154 = L.marker(
+                [25.2532, 55.3657],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_2d12ce14d7b16e81856e5b08fbb94f18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8ece0433ea313441b1b92c5291840154.setIcon(icon_2d12ce14d7b16e81856e5b08fbb94f18);
+        
+    
+        var popup_1abef436b052441e724017cbf4cd1de6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a842ca89fae90550c04a6908dd03cac3 = $(`<div id="html_a842ca89fae90550c04a6908dd03cac3" style="width: 100.0%; height: 100.0%;">City: Dubai<br>Airport: Dubai International Airport<br>Daily Routes: 1300<br>Airlines: 90</div>`)[0];
+                popup_1abef436b052441e724017cbf4cd1de6.setContent(html_a842ca89fae90550c04a6908dd03cac3);
+            
+        
+
+        marker_8ece0433ea313441b1b92c5291840154.bindPopup(popup_1abef436b052441e724017cbf4cd1de6)
+        ;
+
+        
+    
+    
+            var marker_e8f67e60d0ab0fbe896f25f650a69df8 = L.marker(
+                [41.9742, -87.9073],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_8a4d7ed2038bd23e54309494935a4b1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e8f67e60d0ab0fbe896f25f650a69df8.setIcon(icon_8a4d7ed2038bd23e54309494935a4b1b);
+        
+    
+        var popup_5018e35fab06158cdca792cf8579e9ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65a194d97e40128923a5db4d7ea35066 = $(`<div id="html_65a194d97e40128923a5db4d7ea35066" style="width: 100.0%; height: 100.0%;">City: Chicago<br>Airport: O'Hare International Airport<br>Daily Routes: 2300<br>Airlines: 45</div>`)[0];
+                popup_5018e35fab06158cdca792cf8579e9ec.setContent(html_65a194d97e40128923a5db4d7ea35066);
+            
+        
+
+        marker_e8f67e60d0ab0fbe896f25f650a69df8.bindPopup(popup_5018e35fab06158cdca792cf8579e9ec)
+        ;
+
+        
+    
+    
+            var marker_c0c428f1233c07f985dcb65ff1ad157e = L.marker(
+                [51.47, -0.4543],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_9047e2252f4cd4694e29eeacd34076f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c0c428f1233c07f985dcb65ff1ad157e.setIcon(icon_9047e2252f4cd4694e29eeacd34076f1);
+        
+    
+        var popup_aa9073ab03426875b7e2686df78b5920 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bab9b9cec37a84228d5c91457bfba826 = $(`<div id="html_bab9b9cec37a84228d5c91457bfba826" style="width: 100.0%; height: 100.0%;">City: London<br>Airport: Heathrow Airport<br>Daily Routes: 1800<br>Airlines: 80</div>`)[0];
+                popup_aa9073ab03426875b7e2686df78b5920.setContent(html_bab9b9cec37a84228d5c91457bfba826);
+            
+        
+
+        marker_c0c428f1233c07f985dcb65ff1ad157e.bindPopup(popup_aa9073ab03426875b7e2686df78b5920)
+        ;
+
+        
+    
+    
+            var marker_9faba49de217d75fae752914a0dfb6f7 = L.marker(
+                [31.1434, 121.8052],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_aa8e195d2e574ab0ff61dce7ddaa7c39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9faba49de217d75fae752914a0dfb6f7.setIcon(icon_aa8e195d2e574ab0ff61dce7ddaa7c39);
+        
+    
+        var popup_e0d66b397acc393fef30c898659612f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_960c705491bff9fae898a36300ffac1b = $(`<div id="html_960c705491bff9fae898a36300ffac1b" style="width: 100.0%; height: 100.0%;">City: Shanghai<br>Airport: Pudong International Airport<br>Daily Routes: 1600<br>Airlines: 85</div>`)[0];
+                popup_e0d66b397acc393fef30c898659612f3.setContent(html_960c705491bff9fae898a36300ffac1b);
+            
+        
+
+        marker_9faba49de217d75fae752914a0dfb6f7.bindPopup(popup_e0d66b397acc393fef30c898659612f3)
+        ;
+
+        
+    
+    
+            var marker_30a7cf391f4d1815e7742de075eda5b9 = L.marker(
+                [49.0097, 2.5479],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_8831220fddc55c9c0964e974dcdf663f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_30a7cf391f4d1815e7742de075eda5b9.setIcon(icon_8831220fddc55c9c0964e974dcdf663f);
+        
+    
+        var popup_4616fb1c2ef7c0fd23c14cc2fb940add = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca29d051e21b2c81d1461879d020f5b5 = $(`<div id="html_ca29d051e21b2c81d1461879d020f5b5" style="width: 100.0%; height: 100.0%;">City: Paris<br>Airport: Charles de Gaulle Airport<br>Daily Routes: 1400<br>Airlines: 75</div>`)[0];
+                popup_4616fb1c2ef7c0fd23c14cc2fb940add.setContent(html_ca29d051e21b2c81d1461879d020f5b5);
+            
+        
+
+        marker_30a7cf391f4d1815e7742de075eda5b9.bindPopup(popup_4616fb1c2ef7c0fd23c14cc2fb940add)
+        ;
+
+        
+    
+    
+            var marker_58e42cb0f87d44714d0a06ec40a7e477 = L.marker(
+                [32.8998, -97.0403],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_6fdf5cdaa68ff07883326363079afed5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58e42cb0f87d44714d0a06ec40a7e477.setIcon(icon_6fdf5cdaa68ff07883326363079afed5);
+        
+    
+        var popup_3b7987d2509c4af68295094c44f3ec2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7f69b7a1dc04b2f7ef449ff3819a3bd = $(`<div id="html_a7f69b7a1dc04b2f7ef449ff3819a3bd" style="width: 100.0%; height: 100.0%;">City: Dallas<br>Airport: Dallas/Fort Worth International<br>Daily Routes: 2000<br>Airlines: 55</div>`)[0];
+                popup_3b7987d2509c4af68295094c44f3ec2c.setContent(html_a7f69b7a1dc04b2f7ef449ff3819a3bd);
+            
+        
+
+        marker_58e42cb0f87d44714d0a06ec40a7e477.bindPopup(popup_3b7987d2509c4af68295094c44f3ec2c)
+        ;
+
+        
+    
+    
+            var marker_b20cd36151a1801614f630ecfaab5cce = L.marker(
+                [23.3924, 113.299],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_fcee3a29ba5f174715608cd6d153dc58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b20cd36151a1801614f630ecfaab5cce.setIcon(icon_fcee3a29ba5f174715608cd6d153dc58);
+        
+    
+        var popup_2324eb29ffc269fb30d3eab1a97bb20d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a958f82c0adda3910c96fcbd267f7498 = $(`<div id="html_a958f82c0adda3910c96fcbd267f7498" style="width: 100.0%; height: 100.0%;">City: Guangzhou<br>Airport: Baiyun International Airport<br>Daily Routes: 1200<br>Airlines: 65</div>`)[0];
+                popup_2324eb29ffc269fb30d3eab1a97bb20d.setContent(html_a958f82c0adda3910c96fcbd267f7498);
+            
+        
+
+        marker_b20cd36151a1801614f630ecfaab5cce.bindPopup(popup_2324eb29ffc269fb30d3eab1a97bb20d)
+        ;
+
+        
+    
+    
+            var marker_3db6750e90c9d02b87f84ab0c0dae653 = L.marker(
+                [52.3105, 4.7683],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_1e937431adb0af712aa97e255d023cff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3db6750e90c9d02b87f84ab0c0dae653.setIcon(icon_1e937431adb0af712aa97e255d023cff);
+        
+    
+        var popup_be5bc4dc7cccdd67b7db86e16d387af1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_583b7bb04e33543c6a1d23abba231166 = $(`<div id="html_583b7bb04e33543c6a1d23abba231166" style="width: 100.0%; height: 100.0%;">City: Amsterdam<br>Airport: Schiphol Airport<br>Daily Routes: 1300<br>Airlines: 60</div>`)[0];
+                popup_be5bc4dc7cccdd67b7db86e16d387af1.setContent(html_583b7bb04e33543c6a1d23abba231166);
+            
+        
+
+        marker_3db6750e90c9d02b87f84ab0c0dae653.bindPopup(popup_be5bc4dc7cccdd67b7db86e16d387af1)
+        ;
+
+        
+    
+    
+            var marker_1620deeb8a15a9baa29c3a83f0075c4c = L.marker(
+                [50.0379, 8.5622],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_67749bca7e4f11f13a1a776efb434827 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1620deeb8a15a9baa29c3a83f0075c4c.setIcon(icon_67749bca7e4f11f13a1a776efb434827);
+        
+    
+        var popup_4275180c757461f0328065edd1f1e158 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4367c8d702ba9f31214a0ee6ef14d0b = $(`<div id="html_d4367c8d702ba9f31214a0ee6ef14d0b" style="width: 100.0%; height: 100.0%;">City: Frankfurt<br>Airport: Frankfurt Airport<br>Daily Routes: 1400<br>Airlines: 70</div>`)[0];
+                popup_4275180c757461f0328065edd1f1e158.setContent(html_d4367c8d702ba9f31214a0ee6ef14d0b);
+            
+        
+
+        marker_1620deeb8a15a9baa29c3a83f0075c4c.bindPopup(popup_4275180c757461f0328065edd1f1e158)
+        ;
+
+        
+    
+    
+            var marker_ec1805adad01c5ddf04a68dd383ac30d = L.marker(
+                [41.2759, 28.7519],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_78daa35cf13940ea5e356dbe6bf8364e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ec1805adad01c5ddf04a68dd383ac30d.setIcon(icon_78daa35cf13940ea5e356dbe6bf8364e);
+        
+    
+        var popup_08d9322bfceec6f6995b2b3dab684f8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84796f8a093d7a8dd21f60b9882aeb9f = $(`<div id="html_84796f8a093d7a8dd21f60b9882aeb9f" style="width: 100.0%; height: 100.0%;">City: Istanbul<br>Airport: Istanbul Airport<br>Daily Routes: 1500<br>Airlines: 80</div>`)[0];
+                popup_08d9322bfceec6f6995b2b3dab684f8c.setContent(html_84796f8a093d7a8dd21f60b9882aeb9f);
+            
+        
+
+        marker_ec1805adad01c5ddf04a68dd383ac30d.bindPopup(popup_08d9322bfceec6f6995b2b3dab684f8c)
+        ;
+
+        
+    
+    
+            var marker_b6c0e3d7160fc15acae4ea8161f17c84 = L.marker(
+                [22.308, 113.9185],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_392b6628929ae6150bf677ddaf297125 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b6c0e3d7160fc15acae4ea8161f17c84.setIcon(icon_392b6628929ae6150bf677ddaf297125);
+        
+    
+        var popup_bc665b8a3f4818b5352facf77063f2b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_309583ee2c0e3edc2bd73badac049ca8 = $(`<div id="html_309583ee2c0e3edc2bd73badac049ca8" style="width: 100.0%; height: 100.0%;">City: Hong Kong<br>Airport: Hong Kong International Airport<br>Daily Routes: 1100<br>Airlines: 90</div>`)[0];
+                popup_bc665b8a3f4818b5352facf77063f2b4.setContent(html_309583ee2c0e3edc2bd73badac049ca8);
+            
+        
+
+        marker_b6c0e3d7160fc15acae4ea8161f17c84.bindPopup(popup_bc665b8a3f4818b5352facf77063f2b4)
+        ;
+
+        
+    
+    
+            var marker_9024f9b5c7916b5eba184fc172e8d5c7 = L.marker(
+                [39.8561, -104.6737],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_da110d7387af3e955af4fee3378a7380 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9024f9b5c7916b5eba184fc172e8d5c7.setIcon(icon_da110d7387af3e955af4fee3378a7380);
+        
+    
+        var popup_ecb8aad251713359be38d90a4a596ad7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fdfcd909f3195438fb95d5eb19ad156 = $(`<div id="html_8fdfcd909f3195438fb95d5eb19ad156" style="width: 100.0%; height: 100.0%;">City: Denver<br>Airport: Denver International Airport<br>Daily Routes: 1600<br>Airlines: 50</div>`)[0];
+                popup_ecb8aad251713359be38d90a4a596ad7.setContent(html_8fdfcd909f3195438fb95d5eb19ad156);
+            
+        
+
+        marker_9024f9b5c7916b5eba184fc172e8d5c7.bindPopup(popup_ecb8aad251713359be38d90a4a596ad7)
+        ;
+
+        
+    
+    
+            var marker_4a44143275df26f158cccd8422ebd692 = L.marker(
+                [1.3644, 103.9915],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_412a766a1fc00c7d73b00f40e889683c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4a44143275df26f158cccd8422ebd692.setIcon(icon_412a766a1fc00c7d73b00f40e889683c);
+        
+    
+        var popup_314fd0b7309254d058af8644ff5377cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_423954d26d6e2ea179fa61be8e85511d = $(`<div id="html_423954d26d6e2ea179fa61be8e85511d" style="width: 100.0%; height: 100.0%;">City: Singapore<br>Airport: Changi Airport<br>Daily Routes: 1300<br>Airlines: 95</div>`)[0];
+                popup_314fd0b7309254d058af8644ff5377cd.setContent(html_423954d26d6e2ea179fa61be8e85511d);
+            
+        
+
+        marker_4a44143275df26f158cccd8422ebd692.bindPopup(popup_314fd0b7309254d058af8644ff5377cd)
+        ;
+
+        
+    
+    
+            var marker_c4454283f8d4185e9a9a3643a9cfbae8 = L.marker(
+                [37.4602, 126.4407],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_19171a9c93b1226a5cd8909f86519f6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4454283f8d4185e9a9a3643a9cfbae8.setIcon(icon_19171a9c93b1226a5cd8909f86519f6f);
+        
+    
+        var popup_54542d769d35a6d2e22e44e7881f5580 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70333fcd61cfcc750e04c43d3e511e20 = $(`<div id="html_70333fcd61cfcc750e04c43d3e511e20" style="width: 100.0%; height: 100.0%;">City: Seoul<br>Airport: Incheon International Airport<br>Daily Routes: 1200<br>Airlines: 85</div>`)[0];
+                popup_54542d769d35a6d2e22e44e7881f5580.setContent(html_70333fcd61cfcc750e04c43d3e511e20);
+            
+        
+
+        marker_c4454283f8d4185e9a9a3643a9cfbae8.bindPopup(popup_54542d769d35a6d2e22e44e7881f5580)
+        ;
+
+        
+    
+    
+            var marker_5dcac7287b72ba5a04d5fefe00507d14 = L.marker(
+                [13.6811, 100.7473],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_44e7c1a68bac13bea103c17850b5d565 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5dcac7287b72ba5a04d5fefe00507d14.setIcon(icon_44e7c1a68bac13bea103c17850b5d565);
+        
+    
+        var popup_08b06e6438ef9686a8d3f8d695b5133f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4b43ad4f2bd51c82f3563c750ec7e64 = $(`<div id="html_c4b43ad4f2bd51c82f3563c750ec7e64" style="width: 100.0%; height: 100.0%;">City: Bangkok<br>Airport: Suvarnabhumi Airport<br>Daily Routes: 1100<br>Airlines: 75</div>`)[0];
+                popup_08b06e6438ef9686a8d3f8d695b5133f.setContent(html_c4b43ad4f2bd51c82f3563c750ec7e64);
+            
+        
+
+        marker_5dcac7287b72ba5a04d5fefe00507d14.bindPopup(popup_08b06e6438ef9686a8d3f8d695b5133f)
+        ;
+
+        
+    
+    
+            var marker_1266835715a77d93b1d521b219f7b0e1 = L.marker(
+                [40.6413, -73.7781],
+                {
+}
+            ).addTo(map_bad9d323fcd7b14999d42132e3302e55);
+        
+    
+            var icon_abb38c0ce8d7a11481f0cb6bd1f44a57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1266835715a77d93b1d521b219f7b0e1.setIcon(icon_abb38c0ce8d7a11481f0cb6bd1f44a57);
+        
+    
+        var popup_5294a53aba2ba9b60f642c70de7832e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab24f184cf0a8bc48d688ba99a1437e8 = $(`<div id="html_ab24f184cf0a8bc48d688ba99a1437e8" style="width: 100.0%; height: 100.0%;">City: New York<br>Airport: John F. Kennedy International<br>Daily Routes: 1900<br>Airlines: 65</div>`)[0];
+                popup_5294a53aba2ba9b60f642c70de7832e7.setContent(html_ab24f184cf0a8bc48d688ba99a1437e8);
+            
+        
+
+        marker_1266835715a77d93b1d521b219f7b0e1.bindPopup(popup_5294a53aba2ba9b60f642c70de7832e7)
+        ;
+
+        
+    
+</script>
+</html>
