@@ -17,7 +17,7 @@ This project showcases the capabilities of **DeepSeek Chat AI** in generating st
 ## 🏗 How to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/deepseek-chat-demo.git
+   git clone https://github.com/r123singh/airports_deepseek
    cd deepseek-chat-demo
    ```
 2. Install dependencies:
